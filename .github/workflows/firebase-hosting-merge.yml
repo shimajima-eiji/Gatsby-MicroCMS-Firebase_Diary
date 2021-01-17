@@ -14,10 +14,10 @@ jobs:
     - uses: actions/setup-node@v1  # なくても動くがGithubPagesと統一
     - run: yarn
     - run: yarn build
-    env:
-      GATSBY_API_KEY: ${{ secrets.GATSBY_API_KEY }}
-      GATSBY_SERVICE_ID: ${{ secrets.GATSBY_SERVICE_ID }}
-      GATSBY_ADSENSE: ${{ secrets.GATSBY_ADSENSE }}
+      env:
+        GATSBY_API_KEY: ${{ secrets.GATSBY_API_KEY }}
+        GATSBY_SERVICE_ID: ${{ secrets.GATSBY_SERVICE_ID }}
+        GATSBY_ADSENSE: ${{ secrets.GATSBY_ADSENSE }}
 
     # Only Firebase Hosting
     - uses: FirebaseExtended/action-hosting-deploy@v0
