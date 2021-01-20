@@ -10,6 +10,7 @@ import Share from "@components/share"
 
 ////  css in JS(emotion)  ////
 import { css } from "@emotion/react";  // need: @emotion/react FYI: https://blog.ojisan.io/s-c-kigo
+import Adsense from "../components/adsense"
 
 // 共通
 const Style_normal_text = css`
@@ -76,6 +77,7 @@ export default ( { pageContext } ) =>
         image={ image }
       />
       <div css={ Style_container }>
+        <Adsense></Adsense>
         <article>
           <h1>{ title }</h1>
           <p><span>最終更新:{ updatedAt }（初公開:{ publishedAt }）</span></p>
@@ -92,7 +94,9 @@ export default ( { pageContext } ) =>
               alt={ title }
             />
           }
+          <Adsense></Adsense>
           <section css={ Style_normal_text } dangerouslySetInnerHTML={ { __html: body } } />
+          <Adsense></Adsense>
           < Share
             title={ sns_title }
             url={ url }

@@ -9,6 +9,7 @@ import SEO from "@components/seo"
 
 ////  css in JS(emotion)  ////
 import { css } from "@emotion/react";  // need: @emotion/react FYI: https://blog.ojisan.io/s-c-kigo
+import Adsense from "../components/adsense"
 
 // 共通
 const Style_normal_text = css`
@@ -127,6 +128,7 @@ export default ( { data } ) =>
       <div css={ Style_container }>
         <section>
           <h1 css={ Style_information }>新しく書いた記事が上に来ます。</h1>
+          <Adsense></Adsense>
           { data.allMicrocmsMain.nodes.map( node =>
           {
             return (
