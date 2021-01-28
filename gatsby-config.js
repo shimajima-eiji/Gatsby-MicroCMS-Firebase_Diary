@@ -78,14 +78,6 @@ module.exports = {
     },
     `gatsby-plugin-image`, // FYI: https://ebisu.com/note/new-gatsby-image/
     `gatsby-plugin-emotion`,  // FYI: https://www.gatsbyjs.com/plugins/gatsby-plugin-emotion/
-    `gatsby-plugin-netlify-cache`,  // FYI: https://www.gatsbyjs.com/plugins/gatsby-plugin-netlify-cache/
-    {
-      resolve: `gatsby-plugin-canonical-urls`, // FYI: https://qiita.com/atomyah/items/69028992eacf28d92957
-      options: {
-        siteUrl: `https://nomuraya-diary.netlify.app`,
-        stripQueryString: true,
-      },
-    },
     `gatsby-plugin-sitemap`,  // FYI: https://qiita.com/atomyah/items/69028992eacf28d92957
     {
       resolve: 'gatsby-plugin-robots-txt', // FYI: https://qiita.com/atomyah/items/69028992eacf28d92957
