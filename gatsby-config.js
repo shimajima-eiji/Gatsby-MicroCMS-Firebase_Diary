@@ -119,11 +119,5 @@ module.exports = {
         template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,  // FYI: https://www.gatsbyjs.com/plugins/gatsby-plugin-google-adsense/
-      options: {
-        publisherId: process.env.GATSBY_ADSENSE, // dotenv/ ca-pub-XXXXXXXXXXXXXXXX
-      },
-    },
   ],
 }
